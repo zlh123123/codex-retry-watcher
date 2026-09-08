@@ -1,0 +1,12 @@
+# Build output
+CodexRetryWatcher.app/
+icon/AppIcon.icns
+icon/AppIcon.iconset/
+icon/makeicon
+
+# Runtime artifacts — ax-dump.txt contains the accessibility tree of your
+# Codex window, i.e. your session text. Never commit it.
+*.log
+ax-dump.txt
+
+.DS_Store
