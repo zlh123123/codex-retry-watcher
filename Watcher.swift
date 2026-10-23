@@ -61,7 +61,7 @@ final class Watcher {
 
     struct Config {
         var triggers: [String] = ["at capacity"]
-        var buttonLabels: [String] = ["retry", "try again"]
+        var buttonLabels: [String] = ["retry", "try again", "重试", "再试一次"]
         var interval: TimeInterval = 3
         var cooldown: TimeInterval = 10
         /// 0 means unlimited: keep retrying as long as the error is on screen.
