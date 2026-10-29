@@ -149,8 +149,9 @@ launchctl load -w ~/Library/LaunchAgents/local.codex-retry-watcher.plist
   (而不是缩放一张大图),16pt 下自动去掉闪电免得糊成一团。
   `bash icon/make-icon.sh` 重新生成。
 
-只有当 Retry 按钮和触发文案出现在**同一个窗口**里才会按 —— 这是它不会误点别处
-Retry 的原因。
+只有当 Retry 按钮和触发文案出现在**同一个窗口**里才会按。每次扫描会遍历
+Codex 暴露的所有窗口，并按下每个符合条件的 Retry 按钮，所以多个 Codex
+窗口或多个同时报错的对话都可以一起处理。
 
 默认按钮文案已经包含中文的 `重试` 和 `再试一次`。如果你的 Codex 版本连错误
 提示文本也本地化了,可以用 `--trigger` 指定实际显示的文本,或者用

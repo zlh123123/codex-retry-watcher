@@ -173,7 +173,8 @@ launchctl load -w ~/Library/LaunchAgents/local.codex-retry-watcher.plist
 
 A press only happens when a Retry-style button and the trigger text are found
 in the *same window*, which is what keeps it from clicking unrelated Retry
-buttons.
+buttons. Each scan visits every exposed Codex window and presses every matching
+Retry button, so simultaneous conversations can be handled together.
 
 The default button list includes the Chinese labels `重试` and `再试一次`. The
 capacity error text is still matched by `at capacity`; use `--trigger` if the
